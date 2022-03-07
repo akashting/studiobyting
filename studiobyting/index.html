@@ -1,0 +1,1981 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ting</title>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
+		/>
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png" />
+
+		<style>
+			@font-face {
+				font-family: american_typewriter;
+				src: url(fonts/AMERICAN_TYPEWRITER_REGULAR.TTF);
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+				padding: 0;
+			}
+
+			.main-wrapper {
+				width: 1140px;
+				margin: auto;
+				padding: 40px 0;
+			}
+
+			.main-wrapper .ting-logo {
+				text-align: center;
+				margin: 20px 0 60px 0;
+			}
+
+			.logo-section {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				text-align: center;
+				margin-right: -30px;
+			}
+
+			.logo-section .logo-inside {
+				width: 30%;
+				padding: 40px 0;
+				padding-right: 30px;
+				position: relative;
+			}
+
+			.overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+			}
+
+			.logo-section .logo-inside p {
+				font-family: american_typewriter;
+				font-size: 18px;
+				color: #000000;
+				margin: 0;
+				padding: 20px 0 0;
+			}
+
+			.logo-section .logo-inside a {
+				text-decoration: none;
+			}
+
+			.logo-img {
+				display: flex;
+				min-height: 100px;
+				align-items: center;
+				justify-content: center;
+			}
+
+			iframe {
+				width: 100%;
+				height: 200px;
+			}
+
+			@media screen and (max-width: 1200px) {
+				.main-wrapper {
+					width: 100%;
+				}
+			}
+
+			@media screen and (max-width: 767px) {
+				.logo-section .logo-inside {
+					width: 100%;
+				}
+
+				.logo-img {
+					min-height: auto;
+				}
+			}
+
+			.tab .button_section h5 {
+				display: flex;
+				padding: 0 20px;
+				padding: 20px 0;
+				justify-content: center;
+				background-color: #fae90c;
+			}
+
+			.tab .button_section h5 span {
+				color: #000;
+				margin: 0 18px;
+				font-size: 20px;
+				cursor: pointer;
+				padding: 10px;
+				font-family: american_typewriter;
+			}
+
+			@media screen and (max-width: 767px) {
+				.tab .button_section h5 {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: flex-start;
+				}
+
+				.tab .button_section h5 span {
+					margin: 0;
+					width: 50%;
+					padding: 10px 0;
+					text-align: center;
+					display: inline-block;
+					border-bottom: 2px solid transparent;
+				}
+			}
+
+			.tab .button_section .active {
+				border-bottom: 2px solid #000;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="main-wrapper">
+			<div class="ting-logo">
+				<img src="img/Quode-by-ting.png" />
+			</div>
+
+			<div class="tab">
+				<div class="button_section">
+					<h5>
+						<span class="active" data-id="1">Product</span>
+						<span data-id="2">Brand</span>
+						<span data-id="3">Animations</span>
+						<span data-id="4">ting</span>
+						<span data-id="5">TVC</span>
+						<span data-id="6">Internal</span>
+						<span data-id="7">Explainer</span>
+						<span data-id="8">Food</span>
+						<span data-id="9">Intervies</span>
+					</h5>
+				</div>
+				<div class="categories" id="1">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a href="https://www.jio.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/jio.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.avendus.com/india" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Avendus.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.welspunone.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Welspun_One.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://waterfieldadvisors.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/waterfield.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.ivycapventures.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/ivy_cap.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.accessarchitects.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/accessarchitects.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.butterflyindia.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/butterfly.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://www.dovetailindia.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Dovetail.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://www.greaterpacificcapital.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/greater_pacific.jpg" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://www.capitalfoods.co.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/capital_foods.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://www.mepro.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Mepro.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.realispat.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Real_Ispat.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://www.concretetmt.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Concrete-tmt.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.goelpipes.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Goel-Pipes.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.shriashutosh.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Shri_Ashutosh.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.dharma-production.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/dharma-productions.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.roykapurfilms.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Roy_Kapur_films.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://akfcnetwork.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/akfc.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://kpplindia.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/KPPL.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="javascript:void(0)" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Unione.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.sunrisershyderabad.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Sunrisers.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.puneripaltan.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/puneri-paltan.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.sphereorigins.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/sphereorigin-logo.gif" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.ipurple.org/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/ipurple.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://intellve.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Intellve.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.hitchki.co/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/hitchki.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.cofsils.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Cofsils.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://silagroup.co.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Sila.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.ventesavenues.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Ventes_Avenues.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://ketofuel.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Ketofuel.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://tck-partners.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/TCK_Capita.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://vectormob.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Vector_mob.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.tufropes.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/tufropes-logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.cofsils.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Cofsils.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://tingprojects.in/projects/ting404/ANA/"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<img src="img/qode_corp/ana-logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.hackberrykids.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Hackberry.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.itsyellowseed.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/itsyellowseed.webp" />
+								</div>
+							</a>
+						</div>
+						<!--
+                    <div class="logo-inside">
+                        <a href="https://manoramagroup.co.in/" target="_blank">
+                            <div class="logo-img">
+                                <img src="img/qode_corp/itsyellowseed.webp">
+                            </div>
+                        </a>
+                    </div>
+-->
+						<div class="logo-inside">
+							<a href="https://www.elde.tech/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/elde-logo2.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://futurense.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/futurense.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.glasswallsystems.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/glass.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.sardadairy.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/sarda.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.adyadairy.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/adya.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.gokulsantol.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/gokul.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.easterntravels.co.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/eastern-travel-logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.serenabeachresort.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/serena-logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.rosentiques.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/rosentiques.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.vervebioenergy.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/verve.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.200notout.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/notout.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.cygnusworldschool.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/cygnus.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.anando.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/anando.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://quantumshift.io/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/quantumshift.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://athaanginfra.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/athaanginfra.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.tagra.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/tagra.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.realillusion.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/realillusion.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://moreretail.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/more.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.rubymills.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Ruby.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://ipipl.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/ipipl.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.gemindia.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/gem_india.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.tortugainvest.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/tortugainvest.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.spacevalet.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/space_valet.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.zodius.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/zodius-logo-new.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.gsentertainment.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/gs_entertainment.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://edutech.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/edutech.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://manoramagroup.co.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/manorama.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.chiffonlondon.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/chiffonlondon.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.tastelfinefood.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/tastal.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://mylittlesteppingstones.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/mylittlesteppingstones.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.rpgis.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/rpgis-logo.png" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="categories" id="2">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=b2ia9UuqEC4"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/b2ia9UuqEC4"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Revolutionary digital movement by Reliance Jio!</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=uRwtxwNjZBI"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/uRwtxwNjZBI"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>For the heroes without a cap. Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=ivoqZVg7zUA"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/ivoqZVg7zUA"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Cafe Zoe - Scootsy TV 1</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=RxpNBxZHQ64"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/RxpNBxZHQ64"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>The Rolling Pin - Scootsy TV 1</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=BY31TT9FzM4"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/BY31TT9FzM4"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Ayub’s - Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=_CqF2kZ7B6I"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/_CqF2kZ7B6I"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Papacream – Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=il67OG1dwPE"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/il67OG1dwPE"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Saucery - Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=ZWzECVEfyB4"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/ZWzECVEfyB4"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Shiro - Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=XtdtIyu3POM"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/XtdtIyu3POM"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>The Sweetish House Mafia - Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=t7NgwpRjT98"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/t7NgwpRjT98"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Pizza Metro Pizza - Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=WnpFVP093LI"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/WnpFVP093LI"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Le Pain Quotidien - Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=1Q4xnzpbhnY"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/1Q4xnzpbhnY"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Your next read - Scootsy TV</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=pGjc8lvKiu4"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/pGjc8lvKiu4"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Serving You The Truth About Tea | Oxfam India</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=GkJJj6sxppw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/GkJJj6sxppw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>NIIF Radiance</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=oyJun_d5cfI"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/oyJun_d5cfI"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>NIIF Anantapur</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=iJJdSz7KrQk"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/iJJdSz7KrQk"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>NIIF Apex</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=PW2THCQdgeA"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/PW2THCQdgeA"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>NIIF Panipat</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=74cwrdYoqaE"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/74cwrdYoqaE"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>UnPauseLife! | Cofsils | Campaign Videos | TingTube</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=ESEzxsBy4_4"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/ESEzxsBy4_4"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Sachin Sky Karting at Smaaash</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=NfEQYlV4f0k"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/NfEQYlV4f0k"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Smaaash tuesdays</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=BpfD5ICTjbQ"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/BpfD5ICTjbQ"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Smaaash theatre ad</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=jxb4a4IW1yE"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/jxb4a4IW1yE"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Men’s Collection - Welcome to Ride the Royal</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=GuMlmW8Wolo"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/GuMlmW8Wolo"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>ZAK - Exhibition Video 1</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=x55gX3Dwm2Q"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/x55gX3Dwm2Q"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Smaaash - Shivfit 1</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=w_-Cop0qfU4"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/w_-Cop0qfU4"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Smaaash - Families</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=22rjpVoMZTc"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/22rjpVoMZTc"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Sonal @smaaash</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?tv=r5lq3x8KXdo"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<div class="overlay"></div>
+									<iframe
+										src="https://www.youtube.com/embed/r5lq3x8KXdo"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Mumbai city fc at Smaaash</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="categories" id="3">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a href="https://ic3live.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/ic3.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://jeebly.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/jeebly.jpg" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://integranxt.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/integra.webp" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.pittiegroup.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/pittie_group.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.relativityia.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/reltivity.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://univassist.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/univAssist.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://bellevuecapital.com.au/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/Bellevue.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://drsanketmehta.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/Sanket_Mehta.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://www.balajiamines.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/balaji_logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.geetaaluminium.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/cropped-geeta-logo-v1.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://vexxalife.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/Vexxa-logo.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.isprava.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/isprava.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://renderclinic.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/Render.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://oddsbyasad.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_wp/odds.png" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="categories" id="4">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a href="https://studiobeej.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/beej.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://kimaye.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/kimaye.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://molsis.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/molsi's.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://behappier.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Behappier.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.taalifoods.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/taali.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://wellbeingnutrition.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/wbn.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://gumptioncoffee.sg/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Gumption.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://skinpot.co/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/skinpot.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://possible.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Possible.webp" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.houseofcoffee.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/House_of_coffee.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://advancemusclemass.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Advance_muscle.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://divinenutrition.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Divine_Nutrition.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://theworldofgaya.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/The_World_of_gaya.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://heydaycare.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/heyday.svg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://cuddlesforcubs.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/cuddles_for_cubs.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://thegiftstudio.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/The_gift_studio.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://tikitoro.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Tikitiro.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://doeraa.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/doeraa.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://acenutrimony.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Ace_Nutrimony.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://welly.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/welly.svg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://iluviapro.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/iluvia.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.farmtohealth.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/fam-to-health-logo.png" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://cristaspices.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/crista_spices.jpg" />
+								</div>
+							</a>
+						</div>
+
+						<div class="logo-inside">
+							<a href="https://vardenchi.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Vardenchi.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://godigi.co.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Godigi-Logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.solefry.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/solefry.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.waabisaabi.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/waabi-sabbi.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://fancyfluff.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Fancy.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.everpurelife.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/everpurelife.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://biofrost.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/BIOFROST-LOGO.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://greenbellonline.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/Logo_Greenbell.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://chosenstore.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/chosen.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://healthvit.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/healthvit.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://lfactorcosmetics.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/lfactorcosmetics.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://topupnutrition.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/topup_nutritio.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.thebrooklyncreamery.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/brookly.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://basics-nutrition.com/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_shop/basic.jpg" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="categories" id="5">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a href="https://www.danifoundation.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_care/Dani_foundation.jpg" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="http://ajif.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_care/ajif-logo.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.wnscaresfoundation.org/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_care/WNS_Care.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.forcegood.org/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_care/forcegood.png" />
+								</div>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="https://www.ujaas.in/" target="_blank">
+								<div class="logo-img">
+									<img src="img/qode_corp/ujaas.svg" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="categories" id="6">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=hrIhLEYUxQs"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/hrIhLEYUxQs"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Avendus Digi-all Video</p>
+							</a>
+							<p></p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=Egne9G8_gss"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/Egne9G8_gss"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>IHCL - Celebrating The Power Of One</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=2LgU-zolt20"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/2LgU-zolt20"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Avendus Recap Video</p>
+							</a>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=J4UuCxvi6gg" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/J4UuCxvi6gg"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+								<p>Amazon Business Turns 1</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="categories" id="7">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=reJtGty68GU" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/reJtGty68GU"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Haptik</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=qx5geohC5FA" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/qx5geohC5FA"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Altiore IIFL Video</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=1r9-D7r2XiA" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/1r9-D7r2XiA"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Automotive Manufacturers - Understanding The New Normal</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=UqlSuTygXt8" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/UqlSuTygXt8"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>CogoPoints Introduction</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=c2WrcagkWQ8" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/c2WrcagkWQ8"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Buying In Bulk - Amazon Business</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=kkU0hqEKYzw" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/kkU0hqEKYzw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>AMAZON_GST VIDEO</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=gOppUKd9edA" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/gOppUKd9edA"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Shared Pay | Amazon Business</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=pzEM900A4GY" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/pzEM900A4GY"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Multiple Users Video - Amazon Business</p>
+						</div>
+						<div class="logo-inside">
+							<a href="youtube.com/watch?v=RxTmi4J2prU" target="_blank">
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/RxTmi4J2prU"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Bryte</p>
+						</div>
+					</div>
+				</div>
+				<div class="categories" id="9">
+					<div class="logo-section">
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-avFCj9_wyuw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-avFCj9_wyuw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>Avendus Eye - Equity Play in a Volatile Market 1</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-y0a51S_2zFo"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-y0a51S_2zFo"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>AmchiDrive</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+						<div class="logo-inside">
+							<a
+								href="https://www.youtube.com/watch?v=-R3P_aPmzMw"
+								target="_blank"
+							>
+								<div class="logo-img">
+									<iframe
+										src="https://www.youtube.com/embed/-R3P_aPmzMw"
+										title="YouTube video player"
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+										allowfullscreen
+									></iframe>
+								</div>
+							</a>
+							<p>
+								Andrew Holland on Union Budget - Shot for Avendus Capital Pvt
+								Ltd 1
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script>
+			$(document).ready(function () {
+				$(".categories").hide();
+				$(".categories:first").show();
+				$("span").click(function () {
+					var getAttr = $(this).attr("data-id");
+					$(".categories").hide();
+					$("#" + getAttr).show();
+				});
+
+				$("span").click(function () {
+					$("span").removeClass("active");
+					$(this).addClass("active");
+				});
+			});
+		</script>
+	</body>
+</html>
